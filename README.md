@@ -126,4 +126,4 @@
 
 ## Contact and Support
 
-For more information or specific requests, please contact the brand team at [branding@strive.exchange](mailto:branding@strive.exchange)
+For more information or specific requests, please contact the brand team at [brand@strive.exchange](mailto:brand@strive.exchange)
