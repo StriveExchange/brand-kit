@@ -1,0 +1,39 @@
+{
+  "name": "@striveexchange/brand-kit",
+  "version": "1.0.0",
+  "description": "Strive Brand Kit Package",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "private": false,
+  "scripts": {
+    "build": "rimraf dist && bun run tsc && bunx --bun vite build",
+    "dist:clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "typescript": "^5.8.2",
+    "rimraf": "^6.0.1",
+    "vite": "^6.3.5",
+    "vite-plugin-static-copy": "^3.0.2"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "exports": {
+    "./banners/openGraph": "./dist/banners/openGraph/index.js",
+    "./banners/w2000px": "./dist/banners/w2000px/index.js",
+    "./colors": "./dist/colors/index.js",
+    "./fonts/brandingFonts": "./dist/fonts/brandingFonts/index.js",
+    "./fonts/everydayFonts": "./dist/fonts/everydayFonts/index.js",
+    "./fonts/platformFonts": "./dist/fonts/platformFonts/index.js",
+    "./logos/combinationMarks/png": "./dist/logos/combinationMarks/png/index.js",
+    "./logos/combinationMarks/svg": "./dist/logos/combinationMarks/svg/index.js",
+    "./logos/logomarks/png": "./dist/logos/logomarks/png/index.js",
+    "./logos/logomarks/svg": "./dist/logos/logomarks/svg/index.js"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
+  }
+}
